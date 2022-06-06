@@ -9,9 +9,9 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from reviews.models import Category, Comment, Genre, Review, Title, User
 
 from api_yamdb.settings import EMAIL_SOURCE
-from reviews.models import Category, Comment, Genre, Review, Title, User
 
 from .authentication import TokenGenerator, get_access_tokens_for_user
 from .filters import TitleFilter

@@ -1,6 +1,5 @@
 from django.http import Http404
 from rest_framework import fields
-
 from reviews.models import Review, Title
 
 

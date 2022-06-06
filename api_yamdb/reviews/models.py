@@ -1,10 +1,9 @@
+from api.validators import year_validator
 from django.contrib.auth.models import (AbstractBaseUser, BaseUserManager,
                                         PermissionsMixin)
 from django.contrib.auth.validators import UnicodeUsernameValidator
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
-
-from api.validators import year_validator
 
 
 class UserManager(BaseUserManager):
