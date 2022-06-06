@@ -1,8 +1,9 @@
 from rest_framework import serializers
 from rest_framework.validators import UniqueTogetherValidator
 
-from .fields import CustomReview, CustomTitle
 from reviews.models import Category, Comment, Genre, Review, Title, User
+
+from .fields import CustomReview, CustomTitle
 
 
 class RegistrationSerializer(serializers.ModelSerializer):

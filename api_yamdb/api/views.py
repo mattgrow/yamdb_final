@@ -10,6 +10,9 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+from api_yamdb.settings import EMAIL_SOURCE
+from reviews.models import Category, Comment, Genre, Review, Title, User
+
 from .authentication import TokenGenerator, get_access_tokens_for_user
 from .filters import TitleFilter
 from .mixins import CustomModelViewSet
@@ -21,8 +24,6 @@ from .serializers import (AuthenticationSerializer, CategorySerializer,
                           TitleReadSerializer, TitleWriteSerializer,
                           UserpatchSerializer, UserpostSerializer,
                           UserSerializer)
-from api_yamdb.settings import EMAIL_SOURCE
-from reviews.models import Category, Comment, Genre, Review, Title, User
 
 account_activation_token = TokenGenerator()
 
