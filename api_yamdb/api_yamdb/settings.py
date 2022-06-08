@@ -1,5 +1,4 @@
 import os
-from pickle import FALSE
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
