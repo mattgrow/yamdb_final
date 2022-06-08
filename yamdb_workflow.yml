@@ -43,6 +43,7 @@ jobs:
           tags: mattgrow1989/yamdb_final:latest
 
   deploy:
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
     steps:
